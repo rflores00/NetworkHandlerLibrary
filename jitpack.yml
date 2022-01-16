@@ -2,4 +2,5 @@ jdk:
   - openjdk11
 install:
   - ./gradlew :NetworkHandler:build :NetworkHandler:publishToMavenLocal -x :NetworkHandler:test
+  - ./gradlew :annotation-processor:build :annotation-processor:publishToMavenLocal -x :annotation-processor:test
   - find . -name "*.aar"

@@ -1,5 +1,5 @@
 jdk:
   - openjdk11
 install:
-  - ./gradlew :moka:build :moka:publishToMavenLocal -x :moka:test
+  - ./gradlew :NetworkHandler:build :NetworkHandler:publishToMavenLocal -x :NetworkHandler:test
   - find . -name "*.aar"

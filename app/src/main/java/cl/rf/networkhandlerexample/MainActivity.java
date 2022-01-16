@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*
         viewModel = new ViewModelProvider(this).get(MainViewModel.class);
         viewModel.data.observe(this, stringResource -> {
             switch (stringResource.status()){
@@ -33,5 +34,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         viewModel.trigger.postValue("a");
+
+         */
     }
 }

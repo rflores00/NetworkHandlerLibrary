@@ -1,12 +1,4 @@
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        maven { url "https://jitpack.io" }
-    }
-}
-rootProject.name = "NetworkHandlerExample"
+rootProject.name = "networkhandlerexample"
 include ':app'
 include ':NetworkHandler'
 include ':annotation-processor'

@@ -18,23 +18,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*
+
         viewModel = new ViewModelProvider(this).get(MainViewModel.class);
         viewModel.data.observe(this, stringResource -> {
             switch (stringResource.status()){
                 case ERROR:
-                    Log.d("TAG", "Error: "+ stringResource.getMessage());
+                    Log.d("TAG", "Error: "+ stringResource.getCode());
                     break;
                 case LOADING:
                     Log.d("TAG", "Loading: ");
                     break;
                 case SUCCESS:
-                    Log.d("TAG", "SUCCESS: ");
+                    Log.d("TAG", "SUCCESS: "+ stringResource.getData().toString());
                     break;
             }
         });
-        viewModel.trigger.postValue("a");
+        viewModel.trigger.postValue("meelad");
 
-         */
+
     }
 }

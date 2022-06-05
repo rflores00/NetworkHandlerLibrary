@@ -1,5 +1,7 @@
 package cl.rf.networkhandlerexample;
 
+import androidx.annotation.NonNull;
+
 public class SimpleResponse {
     private String name;
     private int age;
@@ -15,5 +17,15 @@ public class SimpleResponse {
 
     public int getCount() {
         return count;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "SimpleResponse{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", count=" + count +
+                '}';
     }
 }

@@ -9,8 +9,6 @@ android {
     defaultConfig {
         minSdk 26
         targetSdk 31
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -41,8 +39,8 @@ project.afterEvaluate {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.4.0'
-    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
 
     //Cliente Http para consumo de servicios REST
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'

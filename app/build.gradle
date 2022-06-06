@@ -38,9 +38,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
-    implementation 'com.github.rflores00.networkhandlerlibrary:networkhandler:0.1.11'
-    implementation 'com.github.rflores00.networkhandlerlibrary:annotation-processor:0.1.11'
-    annotationProcessor 'com.github.rflores00.networkhandlerlibrary:annotation-processor:0.1.11'
-
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api project(path: ':networkhandler')
+    api project(':annotation-processor')
+    annotationProcessor(project(':annotation-processor'))
 }

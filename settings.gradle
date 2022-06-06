@@ -1,4 +1,4 @@
 rootProject.name = "networkhandlerexample"
 include ':app'
-include ':networkhandler'
+include ':NetworkHandler'
 include ':annotation-processor'
